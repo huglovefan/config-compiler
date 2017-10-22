@@ -1,0 +1,35 @@
+// output is 11 lines
+
+bind key {
+	quoteless
+	bind key2 {
+		quoteless
+	}
+}
+
+.
+
+bind key3 {
+	echo "quoted"
+	bind key4 {
+		quoteless
+	}
+}
+
+.
+
+bind key5 {
+	quoteless
+	bind key6 {
+		echo "quoted"
+	}
+}
+
+.
+
+bind key7 {
+	echo "quoted"
+	bind key8 {
+		echo "quoted"
+	}
+}

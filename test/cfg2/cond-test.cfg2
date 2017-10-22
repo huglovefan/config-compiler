@@ -1,0 +1,23 @@
+// output is 21 lines
+
+cond test 0
+
+.
+
+if test {
+	echo "test"
+}
+
+.
+
+unless test {
+	echo "not test"
+}
+
+.
+
+if test {
+	echo "test"
+} else {
+	echo "not test"
+}

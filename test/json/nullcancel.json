@@ -1,0 +1,988 @@
+{
+  "value": {
+    "value": [
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_checkforward_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_checkback_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_checkleft_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_checkright_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 50,
+            "end": 55,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "+forward_cfg",
+              "quoted": false
+            },
+            "start": 56,
+            "end": 68,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-back",
+                        "quoted": false
+                      },
+                      "start": 73,
+                      "end": 78,
+                      "type": 0
+                    }
+                  ],
+                  "start": 73,
+                  "end": 78,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "+forward",
+                        "quoted": false
+                      },
+                      "start": 81,
+                      "end": 89,
+                      "type": 0
+                    }
+                  ],
+                  "start": 81,
+                  "end": 89,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkforward_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "+forward",
+                        "quoted": false
+                      },
+                      "start": 315,
+                      "end": 323,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 69,
+            "end": 114,
+            "type": 2
+          }
+        ],
+        "start": 50,
+        "end": 114,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_0",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 116,
+            "end": 121,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "-forward_cfg",
+              "quoted": false
+            },
+            "start": 122,
+            "end": 134,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-forward",
+                        "quoted": false
+                      },
+                      "start": 139,
+                      "end": 147,
+                      "type": 0
+                    }
+                  ],
+                  "start": 139,
+                  "end": 147,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "cond_checkback_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkforward_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 135,
+            "end": 202,
+            "type": 2
+          }
+        ],
+        "start": 116,
+        "end": 202,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 206,
+            "end": 211,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "+back_cfg",
+              "quoted": false
+            },
+            "start": 212,
+            "end": 221,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-forward",
+                        "quoted": false
+                      },
+                      "start": 226,
+                      "end": 234,
+                      "type": 0
+                    }
+                  ],
+                  "start": 226,
+                  "end": 234,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "+back",
+                        "quoted": false
+                      },
+                      "start": 237,
+                      "end": 242,
+                      "type": 0
+                    }
+                  ],
+                  "start": 237,
+                  "end": 242,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkback_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "+back",
+                        "quoted": false
+                      },
+                      "start": 168,
+                      "end": 173,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 222,
+            "end": 264,
+            "type": 2
+          }
+        ],
+        "start": 206,
+        "end": 264,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 266,
+            "end": 271,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "-back_cfg",
+              "quoted": false
+            },
+            "start": 272,
+            "end": 281,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-back",
+                        "quoted": false
+                      },
+                      "start": 286,
+                      "end": 291,
+                      "type": 0
+                    }
+                  ],
+                  "start": 286,
+                  "end": 291,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "cond_checkforward_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkback_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 282,
+            "end": 349,
+            "type": 2
+          }
+        ],
+        "start": 266,
+        "end": 349,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 353,
+            "end": 358,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "+moveleft_cfg",
+              "quoted": false
+            },
+            "start": 359,
+            "end": 372,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-moveright",
+                        "quoted": false
+                      },
+                      "start": 377,
+                      "end": 387,
+                      "type": 0
+                    }
+                  ],
+                  "start": 377,
+                  "end": 387,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "+moveleft",
+                        "quoted": false
+                      },
+                      "start": 390,
+                      "end": 399,
+                      "type": 0
+                    }
+                  ],
+                  "start": 390,
+                  "end": 399,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkleft_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "+moveleft",
+                        "quoted": false
+                      },
+                      "start": 646,
+                      "end": 655,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 373,
+            "end": 421,
+            "type": 2
+          }
+        ],
+        "start": 353,
+        "end": 421,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 423,
+            "end": 428,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "-moveleft_cfg",
+              "quoted": false
+            },
+            "start": 429,
+            "end": 442,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-moveleft",
+                        "quoted": false
+                      },
+                      "start": 447,
+                      "end": 456,
+                      "type": 0
+                    }
+                  ],
+                  "start": 447,
+                  "end": 456,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "cond_checkright_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkleft_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 443,
+            "end": 514,
+            "type": 2
+          }
+        ],
+        "start": 423,
+        "end": 514,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 518,
+            "end": 523,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "+moveright_cfg",
+              "quoted": false
+            },
+            "start": 524,
+            "end": 538,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-moveleft",
+                        "quoted": false
+                      },
+                      "start": 543,
+                      "end": 552,
+                      "type": 0
+                    }
+                  ],
+                  "start": 543,
+                  "end": 552,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "+moveright",
+                        "quoted": false
+                      },
+                      "start": 555,
+                      "end": 565,
+                      "type": 0
+                    }
+                  ],
+                  "start": 555,
+                  "end": 565,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkright_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "+moveright",
+                        "quoted": false
+                      },
+                      "start": 478,
+                      "end": 488,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 539,
+            "end": 588,
+            "type": 2
+          }
+        ],
+        "start": 518,
+        "end": 588,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 590,
+            "end": 595,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "-moveright_cfg",
+              "quoted": false
+            },
+            "start": 596,
+            "end": 610,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "-moveright",
+                        "quoted": false
+                      },
+                      "start": 615,
+                      "end": 625,
+                      "type": 0
+                    }
+                  ],
+                  "start": 615,
+                  "end": 625,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "cond_checkleft_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_checkright_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 611,
+            "end": 682,
+            "type": 2
+          }
+        ],
+        "start": 590,
+        "end": 682,
+        "type": 1
+      }
+    ],
+    "toplevel": true
+  },
+  "start": 0,
+  "end": 682,
+  "type": 2
+}

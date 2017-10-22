@@ -1,0 +1,13 @@
+// output is 22 lines
+
+bind test1 bind test2 { bind test3 bind test4 "bind test5 bind test6 123" }
+.
+bind A bind B "1; 2"
+.
+bind A bind B bind C "1; 2"
+.
+bind A bind B bind C bind D "1; 2"
+.
+bind A bind B bind C bind D bind E "1; 2"
+.
+bind A bind B bind C bind D bind E bind F "1; 2"

@@ -1,0 +1,278 @@
+{
+  "value": {
+    "value": [
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 24,
+            "end": 29,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "test",
+              "quoted": false
+            },
+            "start": 30,
+            "end": 34,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 35,
+            "end": 40,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "test",
+              "quoted": false
+            },
+            "start": 41,
+            "end": 45,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 48,
+            "end": 53,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "test",
+              "quoted": false
+            },
+            "start": 54,
+            "end": 58,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 59,
+            "end": 64,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "test",
+              "quoted": false
+            },
+            "start": 65,
+            "end": 69,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 71,
+            "end": 76,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "test",
+              "quoted": false
+            },
+            "start": 77,
+            "end": 81,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 82,
+            "end": 87,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "test",
+              "quoted": false
+            },
+            "start": 88,
+            "end": 92,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "123",
+              "quoted": false
+            },
+            "start": 93,
+            "end": 96,
+            "type": 0
+          }
+        ],
+        "start": 24,
+        "end": 99,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 101,
+            "end": 102,
+            "type": 0
+          }
+        ],
+        "start": 101,
+        "end": 102,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_0",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 116,
+            "end": 120,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 121,
+            "end": 129,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 104,
+            "end": 109,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "A",
+              "quoted": false
+            },
+            "start": 110,
+            "end": 111,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": 132,
+                      "end": 137,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "B",
+                        "quoted": false
+                      },
+                      "start": 138,
+                      "end": 139,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 145,
+                      "end": 154,
+                      "type": 0
+                    }
+                  ],
+                  "start": 132,
+                  "end": 158,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 112,
+            "end": 161,
+            "type": 2
+          }
+        ],
+        "start": 104,
+        "end": 161,
+        "type": 1
+      }
+    ],
+    "toplevel": true
+  },
+  "start": 0,
+  "end": 161,
+  "type": 2
+}

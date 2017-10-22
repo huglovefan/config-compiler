@@ -1,0 +1,35 @@
+// output is 11 lines
+
+alias key {
+	quoteless
+	alias key2 {
+		quoteless
+	}
+}
+
+.
+
+alias key3 {
+	echo "quoted"
+	alias key4 {
+		quoteless
+	}
+}
+
+.
+
+alias key5 {
+	quoteless
+	alias key6 {
+		echo "quoted"
+	}
+}
+
+.
+
+alias key7 {
+	echo "quoted"
+	alias key8 {
+		echo "quoted"
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "config-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc && node ./out/testing/verify-test-results.js",
+    "install": "tsc",
+    "generate-tests": "tsc && node ./out/testing/generate-test-results.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

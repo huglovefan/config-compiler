@@ -1,0 +1,10 @@
+// output is 4 lines
+
+bind key {
+	quoteless
+	echo "quoted"
+}
+
+bind key2 {
+	echo "quoted"
+}

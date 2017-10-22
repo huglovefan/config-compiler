@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"module": "commonjs",
+		"outDir": "./out",
+		"sourceMap": true,
+		"types": [
+			"node"
+		]
+	},
+	"include": [
+		"./src"
+	]
+}

@@ -1,0 +1,3 @@
+// output is 2 lines
+
+bind a bind b bind c "1; 2"

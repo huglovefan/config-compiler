@@ -1,0 +1,5 @@
+// output is 3 lines
+
+alias test1 { echo "quotes" }
+
+alias test2 { quoteless; echo "quoted" }

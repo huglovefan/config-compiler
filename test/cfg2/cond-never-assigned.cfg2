@@ -1,0 +1,14 @@
+.if
+if test1 {
+	echo "if - should NOT be outputted"
+}
+.unless
+unless test2 {
+	echo "unless - should be outputted"
+}
+.ifelse
+if test3 {
+	echo "ifelse - should NOT be outputted"
+} else {
+	echo "ifelse - should be outputted"
+}

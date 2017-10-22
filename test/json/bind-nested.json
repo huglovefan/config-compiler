@@ -1,0 +1,570 @@
+{
+  "value": {
+    "value": [
+      {
+        "value": [
+          {
+            "value": {
+              "value": "bind",
+              "quoted": false
+            },
+            "start": 25,
+            "end": 29,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key",
+              "quoted": false
+            },
+            "start": 30,
+            "end": 33,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 38,
+                      "end": 47,
+                      "type": 0
+                    }
+                  ],
+                  "start": 38,
+                  "end": 47,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "bind",
+                        "quoted": false
+                      },
+                      "start": 50,
+                      "end": 54,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "key2",
+                        "quoted": false
+                      },
+                      "start": 55,
+                      "end": 59,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 65,
+                      "end": 74,
+                      "type": 0
+                    }
+                  ],
+                  "start": 50,
+                  "end": 78,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 34,
+            "end": 81,
+            "type": 2
+          }
+        ],
+        "start": 25,
+        "end": 81,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 85,
+            "end": 86,
+            "type": 0
+          }
+        ],
+        "start": 85,
+        "end": 86,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_0",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 104,
+            "end": 108,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 109,
+            "end": 117,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "bind",
+              "quoted": false
+            },
+            "start": 90,
+            "end": 94,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key3",
+              "quoted": false
+            },
+            "start": 95,
+            "end": 99,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "bind",
+                        "quoted": false
+                      },
+                      "start": 120,
+                      "end": 124,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "key4",
+                        "quoted": false
+                      },
+                      "start": 125,
+                      "end": 129,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 135,
+                      "end": 144,
+                      "type": 0
+                    }
+                  ],
+                  "start": 120,
+                  "end": 148,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 100,
+            "end": 151,
+            "type": 2
+          }
+        ],
+        "start": 90,
+        "end": 151,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 155,
+            "end": 156,
+            "type": 0
+          }
+        ],
+        "start": 155,
+        "end": 156,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 201,
+            "end": 205,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 206,
+            "end": 214,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "bind",
+              "quoted": false
+            },
+            "start": 160,
+            "end": 164,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key5",
+              "quoted": false
+            },
+            "start": 165,
+            "end": 169,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 174,
+                      "end": 183,
+                      "type": 0
+                    }
+                  ],
+                  "start": 174,
+                  "end": 183,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "bind",
+                        "quoted": false
+                      },
+                      "start": 186,
+                      "end": 190,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "key6",
+                        "quoted": false
+                      },
+                      "start": 191,
+                      "end": 195,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "temp_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": 186,
+                  "end": 218,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 170,
+            "end": 221,
+            "type": 2
+          }
+        ],
+        "start": 160,
+        "end": 221,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 225,
+            "end": 226,
+            "type": 0
+          }
+        ],
+        "start": 225,
+        "end": 226,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_2",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 275,
+            "end": 279,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 280,
+            "end": 288,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_3",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 244,
+            "end": 248,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 249,
+            "end": 257,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "bind",
+              "quoted": false
+            },
+            "start": 230,
+            "end": 234,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key7",
+              "quoted": false
+            },
+            "start": 235,
+            "end": 239,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "temp_3",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "bind",
+                        "quoted": false
+                      },
+                      "start": 260,
+                      "end": 264,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "key8",
+                        "quoted": false
+                      },
+                      "start": 265,
+                      "end": 269,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "temp_2",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": 260,
+                  "end": 292,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 240,
+            "end": 295,
+            "type": 2
+          }
+        ],
+        "start": 230,
+        "end": 295,
+        "type": 1
+      }
+    ],
+    "toplevel": true
+  },
+  "start": 0,
+  "end": 295,
+  "type": 2
+}

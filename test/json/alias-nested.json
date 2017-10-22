@@ -1,0 +1,570 @@
+{
+  "value": {
+    "value": [
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 25,
+            "end": 30,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key",
+              "quoted": false
+            },
+            "start": 31,
+            "end": 34,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 39,
+                      "end": 48,
+                      "type": 0
+                    }
+                  ],
+                  "start": 39,
+                  "end": 48,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": 51,
+                      "end": 56,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "key2",
+                        "quoted": false
+                      },
+                      "start": 57,
+                      "end": 61,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 67,
+                      "end": 76,
+                      "type": 0
+                    }
+                  ],
+                  "start": 51,
+                  "end": 80,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 35,
+            "end": 83,
+            "type": 2
+          }
+        ],
+        "start": 25,
+        "end": 83,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 87,
+            "end": 88,
+            "type": 0
+          }
+        ],
+        "start": 87,
+        "end": 88,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_0",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 107,
+            "end": 111,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 112,
+            "end": 120,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 92,
+            "end": 97,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key3",
+              "quoted": false
+            },
+            "start": 98,
+            "end": 102,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": 123,
+                      "end": 128,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "key4",
+                        "quoted": false
+                      },
+                      "start": 129,
+                      "end": 133,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 139,
+                      "end": 148,
+                      "type": 0
+                    }
+                  ],
+                  "start": 123,
+                  "end": 152,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 103,
+            "end": 155,
+            "type": 2
+          }
+        ],
+        "start": 92,
+        "end": 155,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 159,
+            "end": 160,
+            "type": 0
+          }
+        ],
+        "start": 159,
+        "end": 160,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 191,
+            "end": 196,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key6",
+              "quoted": false
+            },
+            "start": 197,
+            "end": 201,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 207,
+            "end": 211,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 212,
+            "end": 220,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 164,
+            "end": 169,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key5",
+              "quoted": false
+            },
+            "start": 170,
+            "end": 174,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "quoteless",
+                        "quoted": false
+                      },
+                      "start": 179,
+                      "end": 188,
+                      "type": 0
+                    }
+                  ],
+                  "start": 179,
+                  "end": 188,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "temp_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 175,
+            "end": 227,
+            "type": 2
+          }
+        ],
+        "start": 164,
+        "end": 227,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 231,
+            "end": 232,
+            "type": 0
+          }
+        ],
+        "start": 231,
+        "end": 232,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_2",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 251,
+            "end": 255,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 256,
+            "end": 264,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "temp_3",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 267,
+            "end": 272,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key8",
+              "quoted": false
+            },
+            "start": 273,
+            "end": 277,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 283,
+            "end": 287,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "quoted",
+              "quoted": true
+            },
+            "start": 288,
+            "end": 296,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 236,
+            "end": 241,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "key7",
+              "quoted": false
+            },
+            "start": 242,
+            "end": 246,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "temp_2",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "temp_3",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
+            },
+            "start": 247,
+            "end": 303,
+            "type": 2
+          }
+        ],
+        "start": 236,
+        "end": 303,
+        "type": 1
+      }
+    ],
+    "toplevel": true
+  },
+  "start": 0,
+  "end": 303,
+  "type": 2
+}

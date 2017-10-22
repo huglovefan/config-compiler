@@ -1,0 +1,10 @@
+// output is 4 lines
+
+alias test alias test { alias test alias test "alias test alias test 123" }
+.
+alias A {
+	echo "quoted"
+	alias B {
+		quoteless
+	}
+}

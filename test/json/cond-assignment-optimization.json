@@ -1,0 +1,753 @@
+{
+  "value": {
+    "value": [
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_one_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_one_set_to_false",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_one_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_two_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_three_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_three_set_to_true",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_three_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 314,
+            "end": 318,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "three is true",
+              "quoted": true
+            },
+            "start": 319,
+            "end": 334,
+            "type": 0
+          }
+        ],
+        "start": -1,
+        "end": -1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 0,
+            "end": 1,
+            "type": 0
+          }
+        ],
+        "start": 0,
+        "end": 1,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 3,
+            "end": 8,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "A",
+              "quoted": false
+            },
+            "start": 9,
+            "end": 10,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_one_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 94,
+            "end": 98,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "one is true",
+              "quoted": true
+            },
+            "start": 99,
+            "end": 112,
+            "type": 0
+          }
+        ],
+        "start": 3,
+        "end": 25,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 27,
+            "end": 32,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "B",
+              "quoted": false
+            },
+            "start": 33,
+            "end": 34,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_one_set_to_false",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 27,
+        "end": 49,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 51,
+            "end": 56,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "C",
+              "quoted": false
+            },
+            "start": 57,
+            "end": 58,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_one_set_to_false",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 51,
+        "end": 73,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 75,
+            "end": 80,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "D",
+              "quoted": false
+            },
+            "start": 81,
+            "end": 82,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_one_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 75,
+        "end": 116,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 118,
+            "end": 119,
+            "type": 0
+          }
+        ],
+        "start": 118,
+        "end": 119,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 121,
+            "end": 126,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "A",
+              "quoted": false
+            },
+            "start": 127,
+            "end": 128,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_two_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 188,
+            "end": 192,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "two is true",
+              "quoted": true
+            },
+            "start": 193,
+            "end": 206,
+            "type": 0
+          }
+        ],
+        "start": 121,
+        "end": 143,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 145,
+            "end": 150,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "B",
+              "quoted": false
+            },
+            "start": 151,
+            "end": 152,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_two_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": 145,
+        "end": 167,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 169,
+            "end": 174,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "C",
+              "quoted": false
+            },
+            "start": 175,
+            "end": 176,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_two_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 169,
+        "end": 210,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 212,
+            "end": 213,
+            "type": 0
+          }
+        ],
+        "start": 212,
+        "end": 213,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 215,
+            "end": 220,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "A",
+              "quoted": false
+            },
+            "start": 221,
+            "end": 222,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_three_set_to_true",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 215,
+        "end": 239,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 241,
+            "end": 246,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "B",
+              "quoted": false
+            },
+            "start": 247,
+            "end": 248,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_three_set_to_true",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 241,
+        "end": 265,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 267,
+            "end": 272,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "C",
+              "quoted": false
+            },
+            "start": 273,
+            "end": 274,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_three_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [],
+              "toplevel": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 2
+          }
+        ],
+        "start": 267,
+        "end": 291,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 293,
+            "end": 298,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "D",
+              "quoted": false
+            },
+            "start": 299,
+            "end": 300,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_three_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 293,
+        "end": 338,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 340,
+            "end": 341,
+            "type": 0
+          }
+        ],
+        "start": 340,
+        "end": 341,
+        "type": 1
+      }
+    ],
+    "toplevel": true
+  },
+  "start": 0,
+  "end": 341,
+  "type": 2
+}

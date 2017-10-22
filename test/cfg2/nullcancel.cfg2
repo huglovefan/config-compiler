@@ -1,0 +1,53 @@
+// http://ozfortress.com/showpost.php?p=624355
+
+alias +forward_cfg {
+	-back
+	+forward
+	cond checkforward 1
+}
+alias -forward_cfg {
+	-forward
+	if checkback {
+		+back
+	}
+	cond checkforward 0
+}
+
+alias +back_cfg {
+	-forward
+	+back
+	cond checkback 1
+}
+alias -back_cfg {
+	-back
+	if checkforward {
+		+forward
+	}
+	cond checkback 0
+}
+
+alias +moveleft_cfg {
+	-moveright
+	+moveleft
+	cond checkleft 1
+}
+alias -moveleft_cfg {
+	-moveleft
+	if checkright {
+		+moveright
+	}
+	cond checkleft 0
+}
+
+alias +moveright_cfg {
+	-moveleft
+	+moveright
+	cond checkright 1
+}
+alias -moveright_cfg {
+	-moveright
+	if checkleft {
+		+moveleft
+	}
+	cond checkright 0
+}

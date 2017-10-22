@@ -1,0 +1,15 @@
+.
+alias A { cond one 1 }
+alias B { cond one 0 }
+alias C { cond one 0 }
+alias D { if one { echo "one is true" } }
+.
+alias A { cond two 1 }
+alias B { cond two 0 }
+alias C { if two { echo "two is true" } }
+.
+alias A { cond three 1 }
+alias B { cond three 1 }
+alias C { cond three 0 }
+alias D { if three { echo "three is true" } }
+.
