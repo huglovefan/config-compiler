@@ -48,7 +48,7 @@
           },
           {
             "value": {
-              "value": "cond_test_use_2",
+              "value": "cond_do_unless_use_1",
               "quoted": false
             },
             "start": -1,
@@ -73,34 +73,169 @@
         "value": [
           {
             "value": {
-              "value": "alias",
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 25,
+            "end": 29,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "awoo",
               "quoted": false
             },
             "start": -1,
             "end": -1,
             "type": 0
-          },
+          }
+        ],
+        "start": 25,
+        "end": 37,
+        "type": 1
+      },
+      {
+        "value": [
           {
             "value": {
-              "value": "cond_test_use_3",
+              "value": ".",
               "quoted": false
             },
-            "start": -1,
-            "end": -1,
+            "start": 58,
+            "end": 59,
+            "type": 0
+          }
+        ],
+        "start": 58,
+        "end": 59,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "bind",
+              "quoted": false
+            },
+            "start": 98,
+            "end": 102,
             "type": 0
           },
           {
             "value": {
-              "value": [],
+              "value": "w",
+              "quoted": false
+            },
+            "start": 175,
+            "end": 176,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "say",
+                        "quoted": false
+                      },
+                      "start": 112,
+                      "end": 115,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "i",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "just",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "pressed",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "w",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "!",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": 112,
+                  "end": 140,
+                  "type": 1
+                },
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "explode",
+                        "quoted": false
+                      },
+                      "start": 181,
+                      "end": 188,
+                      "type": 0
+                    }
+                  ],
+                  "start": 181,
+                  "end": 188,
+                  "type": 1
+                }
+              ],
               "toplevel": false
             },
-            "start": -1,
-            "end": -1,
+            "start": 107,
+            "end": 159,
             "type": 2
           }
         ],
-        "start": -1,
-        "end": -1,
+        "start": 98,
+        "end": 159,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 195,
+            "end": 196,
+            "type": 0
+          }
+        ],
+        "start": 195,
+        "end": 196,
         "type": 1
       },
       {
@@ -110,13 +245,31 @@
               "value": "alias",
               "quoted": false
             },
-            "start": -1,
-            "end": -1,
+            "start": 308,
+            "end": 313,
             "type": 0
           },
           {
             "value": {
-              "value": "cond_test_use_4",
+              "value": "+some_key",
+              "quoted": false
+            },
+            "start": 314,
+            "end": 323,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 390,
+            "end": 394,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "a",
               "quoted": false
             },
             "start": -1,
@@ -125,16 +278,118 @@
           },
           {
             "value": {
-              "value": [],
-              "toplevel": false
+              "value": "down",
+              "quoted": false
             },
             "start": -1,
             "end": -1,
-            "type": 2
+            "type": 0
           }
         ],
-        "start": -1,
-        "end": -1,
+        "start": 308,
+        "end": 328,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "alias",
+              "quoted": false
+            },
+            "start": 331,
+            "end": 336,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "-some_key",
+              "quoted": false
+            },
+            "start": 337,
+            "end": 346,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 411,
+            "end": 415,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "a",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "up",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 331,
+        "end": 349,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "bind",
+              "quoted": false
+            },
+            "start": 352,
+            "end": 356,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "a",
+              "quoted": false
+            },
+            "start": 384,
+            "end": 385,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "+some_key",
+              "quoted": false
+            },
+            "start": 361,
+            "end": 370,
+            "type": 0
+          }
+        ],
+        "start": 352,
+        "end": 370,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 429,
+            "end": 430,
+            "type": 0
+          }
+        ],
+        "start": 429,
+        "end": 430,
         "type": 1
       },
       {
@@ -184,147 +439,7 @@
           },
           {
             "value": {
-              "value": "temp_1",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "alias",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "cond_test_use_2",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "echo",
-              "quoted": false
-            },
-            "start": 96,
-            "end": 100,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "not",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "test",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "alias",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "temp_2",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "alias",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "cond_test_use_3",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "echo",
-              "quoted": false
-            },
-            "start": 159,
-            "end": 163,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "not",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "test",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "alias",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "cond_test_set_to_false",
+              "value": "cond_test_use_1",
               "quoted": false
             },
             "start": -1,
@@ -334,6 +449,40 @@
           {
             "value": {
               "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "alias",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "cond_do_unless_use_1",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "temp_0",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": -1,
+                  "end": -1,
+                  "type": 1
+                },
                 {
                   "value": [
                     {
@@ -367,78 +516,12 @@
                   "start": -1,
                   "end": -1,
                   "type": 1
-                },
-                {
-                  "value": [
-                    {
-                      "value": {
-                        "value": "temp_1",
-                        "quoted": false
-                      },
-                      "start": -1,
-                      "end": -1,
-                      "type": 0
-                    }
-                  ],
-                  "start": -1,
-                  "end": -1,
-                  "type": 1
-                },
-                {
-                  "value": [
-                    {
-                      "value": {
-                        "value": "temp_2",
-                        "quoted": false
-                      },
-                      "start": -1,
-                      "end": -1,
-                      "type": 0
-                    }
-                  ],
-                  "start": -1,
-                  "end": -1,
-                  "type": 1
-                },
-                {
-                  "value": [
-                    {
-                      "value": {
-                        "value": "alias",
-                        "quoted": false
-                      },
-                      "start": -1,
-                      "end": -1,
-                      "type": 0
-                    },
-                    {
-                      "value": {
-                        "value": "cond_test_use_4",
-                        "quoted": false
-                      },
-                      "start": -1,
-                      "end": -1,
-                      "type": 0
-                    },
-                    {
-                      "value": {
-                        "value": "temp_0",
-                        "quoted": false
-                      },
-                      "start": -1,
-                      "end": -1,
-                      "type": 0
-                    }
-                  ],
-                  "start": -1,
-                  "end": -1,
-                  "type": 1
                 }
               ],
               "toplevel": false
             },
-            "start": -1,
-            "end": -1,
+            "start": 512,
+            "end": 548,
             "type": 2
           }
         ],
@@ -450,7 +533,43 @@
         "value": [
           {
             "value": {
-              "value": "cond_test_set_to_false",
+              "value": "alias",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "cond_do_unless_use_1",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 631,
+            "end": 635,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "not",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "reached",
               "quoted": false
             },
             "start": -1,
@@ -460,22 +579,6 @@
         ],
         "start": -1,
         "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": ".",
-              "quoted": false
-            },
-            "start": 40,
-            "end": 41,
-            "type": 0
-          }
-        ],
-        "start": 40,
-        "end": 41,
         "type": 1
       },
       {
@@ -498,87 +601,7 @@
         "value": [
           {
             "value": {
-              "value": ".",
-              "quoted": false
-            },
-            "start": 75,
-            "end": 76,
-            "type": 0
-          }
-        ],
-        "start": 75,
-        "end": 76,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "cond_test_use_2",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": ".",
-              "quoted": false
-            },
-            "start": 118,
-            "end": 119,
-            "type": 0
-          }
-        ],
-        "start": 118,
-        "end": 119,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "cond_test_set_to_false",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "cond_test_use_4",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "cond_test_use_3",
+              "value": "cond_do_unless_use_1",
               "quoted": false
             },
             "start": -1,
@@ -594,6 +617,6 @@
     "toplevel": true
   },
   "start": 0,
-  "end": 177,
+  "end": 652,
   "type": 2
 }

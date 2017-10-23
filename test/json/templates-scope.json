@@ -5,63 +5,86 @@
         "value": [
           {
             "value": {
-              "value": "alias",
+              "value": "echo",
               "quoted": false
             },
-            "start": 24,
+            "start": 25,
             "end": 29,
             "type": 0
           },
           {
             "value": {
-              "value": "test1",
-              "quoted": false
-            },
-            "start": 30,
-            "end": 35,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "echo",
-              "quoted": false
-            },
-            "start": 38,
-            "end": 42,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "quotes",
-              "quoted": false
+              "value": "A in nested: outer",
+              "quoted": true
             },
             "start": -1,
             "end": -1,
             "type": 0
           }
         ],
-        "start": 24,
-        "end": 53,
+        "start": 25,
+        "end": 46,
         "type": 1
       },
       {
         "value": [
           {
             "value": {
-              "value": "alias",
+              "value": "echo",
               "quoted": false
             },
-            "start": 57,
-            "end": 62,
+            "start": 81,
+            "end": 85,
             "type": 0
           },
           {
             "value": {
-              "value": "test2",
+              "value": "A in nested_inner: inner",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 81,
+        "end": 108,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "...",
               "quoted": false
             },
-            "start": 63,
-            "end": 68,
+            "start": 204,
+            "end": 207,
+            "type": 0
+          }
+        ],
+        "start": 204,
+        "end": 207,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "bind_",
+              "quoted": false
+            },
+            "start": 315,
+            "end": 320,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "a",
+              "quoted": false
+            },
+            "start": 334,
+            "end": 335,
             "type": 0
           },
           {
@@ -71,32 +94,16 @@
                   "value": [
                     {
                       "value": {
-                        "value": "quoteless",
-                        "quoted": false
-                      },
-                      "start": 71,
-                      "end": 80,
-                      "type": 0
-                    }
-                  ],
-                  "start": 71,
-                  "end": 80,
-                  "type": 1
-                },
-                {
-                  "value": [
-                    {
-                      "value": {
                         "value": "echo",
                         "quoted": false
                       },
-                      "start": 82,
-                      "end": 86,
+                      "start": 323,
+                      "end": 327,
                       "type": 0
                     },
                     {
                       "value": {
-                        "value": "quoted",
+                        "value": "a",
                         "quoted": false
                       },
                       "start": -1,
@@ -104,26 +111,26 @@
                       "type": 0
                     }
                   ],
-                  "start": 82,
-                  "end": 95,
+                  "start": 323,
+                  "end": 331,
                   "type": 1
                 }
               ],
               "toplevel": false
             },
-            "start": 69,
-            "end": 97,
+            "start": 321,
+            "end": 333,
             "type": 2
           }
         ],
-        "start": 57,
-        "end": 97,
+        "start": 240,
+        "end": 247,
         "type": 1
       }
     ],
     "toplevel": true
   },
   "start": 0,
-  "end": 97,
+  "end": 335,
   "type": 2
 }

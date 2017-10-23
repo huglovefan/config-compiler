@@ -51,6 +51,8 @@ function fixBlockArg (commands: CommandList, commandName: string, blockArgPos: n
 		)
 		{
 			// just one string -> parse it as cfg
+			console.log("parsing command string argument to %s into a command list",
+				commandName);
 			const block = stringArgToBlock(firstBlockArg);
 			command.spliceArguments(blockArgPos, 1, block);
 		}
@@ -63,6 +65,10 @@ function fixBlockArg (commands: CommandList, commandName: string, blockArgPos: n
 			
 			const start = firstBlockArg.start;
 			const end = command.end;
+			
+			console.log("unmerging command '%s' from body of %s",
+				firstBlockArg.getString(),
+				commandName);
 			
 			command.pushArguments(
 				CommandList.create([
@@ -263,7 +269,7 @@ function rewriteBlocks_processCommand (
 		// this alias will NOT be quoted, but the body will
 		// lift any commands from the body that need quotes
 		
-		console.assert(commandListNeedsQuotes(block), "commandListNeedsQuotes(block)");
+		// console.assert(commandListNeedsQuotes(block), "commandListNeedsQuotes(block)");
 		
 		// process aliases inside the block, signify that it will be quoted
 		rewriteBlocks_processCommandList(block, true, addAlias);

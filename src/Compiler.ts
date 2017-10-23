@@ -3,6 +3,9 @@ import {Parser} from "./parsing/Parser.js";
 import {CommandList} from "./parsing/Node.js";
 
 import {fixBlockArgs, rewriteBlocks} from "./rewriteBlocks.js";
+import {rewriteTemplates} from "./rewriteTemplates.js";
+import {rewriteDo} from "./rewriteDo.js";
+import {rewriteEchoSay} from "./rewriteEchoSay.js";
 import {rewriteConditionals} from "./rewriteConditionals.js";
 
 export class Compiler
@@ -25,8 +28,11 @@ export class Compiler
 		const parser = new Parser(tokenizer);
 		const commands = parser.parse();
 		
+		rewriteTemplates(commands);
+		rewriteDo(commands);
 		fixBlockArgs(commands);
 		rewriteConditionals(commands);
+		rewriteEchoSay(commands);
 		rewriteBlocks(commands);
 		
 		this.commands = commands;

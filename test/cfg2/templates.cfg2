@@ -1,0 +1,55 @@
+template log message {
+	echo message
+}
+
+log "awoo"
+
+.
+
+template bind_key key commands {
+	bind key {
+		say "i just pressed" key "!"
+		do commands
+	}
+}
+
+bind_key w {
+	explode
+}
+
+.
+
+/*
+	need a way to concatenate strings to
+	make the alias name unique
+*/
+template bind+- key down up {
+	alias +some_key down
+	alias -some_key up
+	bind key +some_key
+}
+
+bind+- a {
+	echo "a down"
+} {
+	echo "a up"
+}
+
+.
+
+template if-else condition then otherwise {
+	cond do_unless 1
+	if condition {
+		cond do_unless 0
+		do then
+	}
+	if do_unless otherwise
+}
+
+cond test 1
+
+if-else test {
+	cond test 0
+} {
+	echo "not reached"
+}

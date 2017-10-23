@@ -204,11 +204,29 @@
           },
           {
             "value": {
-              "value": "three is true",
-              "quoted": true
+              "value": "three",
+              "quoted": false
             },
-            "start": 319,
-            "end": 334,
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "is",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "true",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
             "type": 0
           }
         ],
@@ -281,11 +299,29 @@
           },
           {
             "value": {
-              "value": "one is true",
-              "quoted": true
+              "value": "one",
+              "quoted": false
             },
-            "start": 99,
-            "end": 112,
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "is",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "true",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
             "type": 0
           }
         ],
@@ -460,11 +496,29 @@
           },
           {
             "value": {
-              "value": "two is true",
-              "quoted": true
+              "value": "two",
+              "quoted": false
             },
-            "start": 193,
-            "end": 206,
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "is",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "true",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
             "type": 0
           }
         ],

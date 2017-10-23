@@ -5,49 +5,6 @@
         "value": [
           {
             "value": {
-              "value": "alias",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "temp_0",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "echo",
-              "quoted": false
-            },
-            "start": 49,
-            "end": 53,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "quoted",
-              "quoted": true
-            },
-            "start": 54,
-            "end": 62,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
               "value": "bind",
               "quoted": false
             },
@@ -87,7 +44,16 @@
                   "value": [
                     {
                       "value": {
-                        "value": "temp_0",
+                        "value": "echo",
+                        "quoted": false
+                      },
+                      "start": 49,
+                      "end": 53,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoted",
                         "quoted": false
                       },
                       "start": -1,
@@ -95,8 +61,8 @@
                       "type": 0
                     }
                   ],
-                  "start": -1,
-                  "end": -1,
+                  "start": 49,
+                  "end": 62,
                   "type": 1
                 }
               ],
@@ -109,49 +75,6 @@
         ],
         "start": 24,
         "end": 65,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "alias",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "temp_1",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "echo",
-              "quoted": false
-            },
-            "start": 83,
-            "end": 87,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "quoted",
-              "quoted": true
-            },
-            "start": 88,
-            "end": 96,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
         "type": 1
       },
       {
@@ -176,12 +99,38 @@
           },
           {
             "value": {
-              "value": "temp_1",
-              "quoted": false
+              "value": [
+                {
+                  "value": [
+                    {
+                      "value": {
+                        "value": "echo",
+                        "quoted": false
+                      },
+                      "start": 83,
+                      "end": 87,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoted",
+                        "quoted": false
+                      },
+                      "start": -1,
+                      "end": -1,
+                      "type": 0
+                    }
+                  ],
+                  "start": 83,
+                  "end": 96,
+                  "type": 1
+                }
+              ],
+              "toplevel": false
             },
-            "start": -1,
-            "end": -1,
-            "type": 0
+            "start": 79,
+            "end": 99,
+            "type": 2
           }
         ],
         "start": 69,

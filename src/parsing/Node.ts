@@ -24,6 +24,8 @@ export abstract class Node <TType extends NodeType, TValue>
 		this.end = end;
 	}
 	
+	abstract clone (): Node<any, any>;
+	
 	isArgument (): this is Argument
 	{
 		return this.type === NodeType.ARGUMENT;
@@ -99,6 +101,14 @@ export class Argument extends Node<NodeType.ARGUMENT, {value: string, quoted: bo
 		return false;
 	}
 	
+	clone ()
+	{
+		return new Argument({
+			value: this.value.value,
+			quoted: this.value.quoted,
+		}, this.start, this.end);
+	}
+	
 	/**
 	 * compares values like cfg command names (case-insensitive)
 	 */
@@ -135,6 +145,13 @@ export class Command extends Node<NodeType.COMMAND, (Argument | CommandList)[]>
 	static create (value: (Argument | CommandList)[], start = POS_UNKNOWN, end = POS_UNKNOWN)
 	{
 		return new this(value, start, end);
+	}
+	
+	clone ()
+	{
+		return new Command(
+			this.value.map(v => v.clone()),
+		this.start, this.end);
 	}
 	
 	toString (): string
@@ -175,6 +192,17 @@ export class Command extends Node<NodeType.COMMAND, (Argument | CommandList)[]>
 		return this.value.splice(start, deleteCount, ...replacements);
 	}
 	
+	replaceArgument (arg: Argument | CommandList, ...newArgs: (Argument | CommandList)[])
+	{
+		const pos = this.value.indexOf(arg);
+		if (pos === -1)
+			throw new CompilerError("Command#replaceArgument: arg is not an argument of this");
+		
+		this.value.splice(pos, 1, ...newArgs);
+		
+		console.assert(this.value.indexOf(arg) === -1);
+	}
+	
 	argc ()
 	{
 		return this.value.length;
@@ -185,7 +213,7 @@ export class Command extends Node<NodeType.COMMAND, (Argument | CommandList)[]>
 		if (i < 0 || !Number.isSafeInteger(i))
 			throw new CompilerError("Command#argv: i is negtive or not an integer");
 		if (i >= this.value.length)
-			throw new CompilerError("Command#argv: i is out of range");
+			throw CFGError.for(this, "Too few arguments");
 		
 		return this.value[i];
 	}
@@ -203,6 +231,14 @@ export class CommandList extends Node<NodeType.COMMAND_LIST, {value: Command[], 
 	static createToplevel (value: Command[], start = POS_UNKNOWN, end = POS_UNKNOWN)
 	{
 		return new this({value, toplevel: true}, start, end);
+	}
+	
+	clone (): CommandList
+	{
+		return new CommandList({
+			value: this.value.value.map(v => v.clone()),
+			toplevel: this.value.toplevel,
+		}, this.start, this.end);
 	}
 	
 	toString ()

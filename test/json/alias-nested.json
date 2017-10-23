@@ -109,49 +109,6 @@
               "value": "alias",
               "quoted": false
             },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "temp_0",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "echo",
-              "quoted": false
-            },
-            "start": 107,
-            "end": 111,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "quoted",
-              "quoted": true
-            },
-            "start": 112,
-            "end": 120,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "alias",
-              "quoted": false
-            },
             "start": 92,
             "end": 97,
             "type": 0
@@ -172,7 +129,16 @@
                   "value": [
                     {
                       "value": {
-                        "value": "temp_0",
+                        "value": "echo",
+                        "quoted": false
+                      },
+                      "start": 107,
+                      "end": 111,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoted",
                         "quoted": false
                       },
                       "start": -1,
@@ -180,8 +146,8 @@
                       "type": 0
                     }
                   ],
-                  "start": -1,
-                  "end": -1,
+                  "start": 107,
+                  "end": 120,
                   "type": 1
                 },
                 {
@@ -259,7 +225,7 @@
           },
           {
             "value": {
-              "value": "temp_1",
+              "value": "temp_0",
               "quoted": false
             },
             "start": -1,
@@ -296,10 +262,10 @@
           {
             "value": {
               "value": "quoted",
-              "quoted": true
+              "quoted": false
             },
-            "start": 212,
-            "end": 220,
+            "start": -1,
+            "end": -1,
             "type": 0
           }
         ],
@@ -350,7 +316,7 @@
                   "value": [
                     {
                       "value": {
-                        "value": "temp_1",
+                        "value": "temp_0",
                         "quoted": false
                       },
                       "start": -1,
@@ -403,50 +369,7 @@
           },
           {
             "value": {
-              "value": "temp_2",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "echo",
-              "quoted": false
-            },
-            "start": 251,
-            "end": 255,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "quoted",
-              "quoted": true
-            },
-            "start": 256,
-            "end": 264,
-            "type": 0
-          }
-        ],
-        "start": -1,
-        "end": -1,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
-              "value": "alias",
-              "quoted": false
-            },
-            "start": -1,
-            "end": -1,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "temp_3",
+              "value": "temp_1",
               "quoted": false
             },
             "start": -1,
@@ -483,10 +406,10 @@
           {
             "value": {
               "value": "quoted",
-              "quoted": true
+              "quoted": false
             },
-            "start": 288,
-            "end": 296,
+            "start": -1,
+            "end": -1,
             "type": 0
           }
         ],
@@ -521,7 +444,16 @@
                   "value": [
                     {
                       "value": {
-                        "value": "temp_2",
+                        "value": "echo",
+                        "quoted": false
+                      },
+                      "start": 251,
+                      "end": 255,
+                      "type": 0
+                    },
+                    {
+                      "value": {
+                        "value": "quoted",
                         "quoted": false
                       },
                       "start": -1,
@@ -529,15 +461,15 @@
                       "type": 0
                     }
                   ],
-                  "start": -1,
-                  "end": -1,
+                  "start": 251,
+                  "end": 264,
                   "type": 1
                 },
                 {
                   "value": [
                     {
                       "value": {
-                        "value": "temp_3",
+                        "value": "temp_1",
                         "quoted": false
                       },
                       "start": -1,

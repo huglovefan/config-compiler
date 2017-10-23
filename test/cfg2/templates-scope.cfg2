@@ -1,0 +1,27 @@
+template nested A {
+	
+	echo "A in nested:" A
+	
+	template nested_inner A {
+		echo "A in nested_inner:" A
+	}
+	
+	nested_inner "inner"
+}
+
+nested "outer"
+// using "nested_inner" will error here
+
+
+// --------------------------------------------------------
+... // ----------------------------------------------------
+// --------------------------------------------------------
+
+
+template reverse cmd A B {
+	cmd B A
+}
+
+template bind_ key commands { bind key commands }
+
+reverse bind_ { echo "a" } a
