@@ -1,0 +1,16 @@
+template print_things_on_their_own_lines ...xs {
+	template inner x ...xs {
+		echo x
+		if xs {
+			inner ...xs
+		}
+	}
+	if xs {
+		inner ...xs
+	}
+	echo !
+}
+
+/* parens do nothing but cause the parser to ignore newlines
+   and improve readability a bit */
+print_things_on_their_own_lines (hello world 123 abc)

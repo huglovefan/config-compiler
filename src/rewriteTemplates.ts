@@ -13,6 +13,9 @@ feature roadmap:
 
 todo:
 - there should only be one scope with a ScopeItem class & errors for using the wrong type in cfg2
+- have a list type (replace something with it, i forgot)
+- "define <name> <literal>"
+- "define-list <name> [...items]"
 
 */
 
@@ -24,6 +27,7 @@ enum ScopeItemType
 {
 	NODE,
 	SPREAD,
+	LITERAL,
 	TEMPLATE,
 }
 
@@ -45,6 +49,10 @@ abstract class ScopeItem <TType extends ScopeItemType, TValue>
 	{
 		return this.type === ScopeItemType.SPREAD;
 	}
+	isLiteral (): this is LiteralScopeItem
+	{
+		return this.type === ScopeItemType.LITERAL;
+	}
 	isTemplate (): this is TemplateScopeItem
 	{
 		return this.type === ScopeItemType.TEMPLATE;
@@ -57,12 +65,26 @@ abstract class ScopeItem <TType extends ScopeItemType, TValue>
 		
 		return <Argument | CommandList> (<any> this).value;
 	}
+	getNodeOrLiteral (): Argument | CommandList
+	{
+		if (!this.isNode() && !this.isLiteral())
+			throw new Error();
+		
+		return <Argument | CommandList> (<any> this).value;
+	}
 	getSpread ()
 	{
 		if (!this.isSpread())
 			throw new Error();
 		
 		return <(Argument | CommandList)[]> (<any> this).value;
+	}
+	getLiteral ()
+	{
+		if (!this.isLiteral())
+			throw new Error();
+		
+		return <Argument | CommandList> (<any> this).value;
 	}
 	getTemplate ()
 	{
@@ -81,6 +103,11 @@ class NodeScopeItem extends ScopeItem<ScopeItemType.NODE, Argument | CommandList
 class SpreadScopeItem extends ScopeItem<ScopeItemType.SPREAD, (Argument | CommandList)[]>
 {
 	protected readonly type = ScopeItemType.SPREAD;
+}
+
+class LiteralScopeItem extends ScopeItem<ScopeItemType.LITERAL, Argument | CommandList>
+{
+	protected readonly type = ScopeItemType.LITERAL;
 }
 
 class TemplateScopeItem extends ScopeItem<ScopeItemType.TEMPLATE, Template>
@@ -129,15 +156,48 @@ class Template
 	getReplacement (command: Command, useScope: Scope<ScopeItem<any, any>>)
 	{
 		const args = [...command].slice(1);
-		
-		const cloneScope = new Scope(this.declarationScope);
-		
 		const params = [...this.params];
+		const cloneScope = new Scope(this.declarationScope);
 		
 		while (params.length)
 		{
-			const paramName = params.shift()!;
+			const preValueNode = args[0]
+			if (
+				preValueNode !== undefined &&
+				!(preValueNode instanceof LiteralScopeItem) &&
+				preValueNode.isArgument() &&
+				!preValueNode.isQuoted() &&
+				preValueNode.getString().startsWith("...") &&
+				useScope.has(preValueNode.getString())
+			)
+			{
+				const spread = useScope.get(preValueNode.getString()).getSpread();
+				console.log("spread '%s' in use of %s to %s items", preValueNode.getString(), this.name, spread.length);
+				console.log("before the splice, args:", args);
+				console.log("before the splice, names:", params);
+				// this or get the values and make them literals
+				// yeah i should be looping here
+				// wait no, this isn't the top loop anymore
+				// mark them as literals somehow
+				// looks like splice is unsound and the error is because of that
+				args.splice(0, 1, ...spread.map(n =>
+				{
+					if (n.isArgument())
+						return new LiteralScopeItem(n);
+					return n;
+				}));
+				/* const names = params.splice(0, spread.length);
+				for (let i = 0; i < names.length; i++)
+				{
+					cloneScope.set(names[i], new LiteralScopeItem(spread[i]));
+				} */
+				console.log("after the splice, args:", args);
+				console.log("after the splice, names:", params);
+				//cloneScope.set(preValueNode.getString(), new SpreadScopeItem(spread));
+				continue;
+			}
 			
+			const paramName = params.shift()!;
 			console.assert(!!paramName);
 			
 			if (paramName.startsWith("..."))
@@ -153,16 +213,23 @@ class Template
 				console.log("spread %s will capture %s items",
 					spreadName, leftToSpread);
 				
-				const spread = args.splice(0, leftToSpread);
+				const spread = args.splice(0, leftToSpread).map(n => n instanceof LiteralScopeItem ? n.getLiteral() : n);
 				
 				cloneScope.set(spreadName, new SpreadScopeItem(spread));
 				
 				continue;
 			}
 			
-			const valueNode = args.shift()!;
+			let valueNode = args.shift()!;
 			
-			console.assert(valueNode);
+			if (valueNode instanceof LiteralScopeItem)
+			{
+				cloneScope.set(paramName, valueNode);
+				continue;
+			}
+			
+			if (!valueNode)
+				throw CFGError.for(command, "Too few arguments");
 			
 			if (valueNode.isArgument() && !valueNode.isQuoted())
 			{
@@ -214,6 +281,30 @@ function interpretTemplatesInBlock
 			continue;
 		}
 		
+		if (command.nameEquals("if"))
+		{
+			const condition = command.argv(1).getArgument().getString();
+			
+			const dotted = "..." + condition;
+			
+			if (scope.has(dotted))
+			{
+				const ifBlock = command.argv(2).getCommandList();
+				const hasIt = (scope.get(dotted).getSpread().length !== 0);
+				if (hasIt)
+				{
+					interpretTemplatesInBlock(ifBlock, new Scope(scope));
+					block.replaceChild(command, ...ifBlock);
+				}
+				else
+				{
+					block.removeChild(command);
+				}
+				
+				continue;
+			}
+		}
+		
 		// use of a template
 		if (scope.has(command.getName()))
 		{
@@ -240,7 +331,7 @@ function interpretTemplatesInBlock
 				
 				if (!scope.get(s).isSpread())
 				{
-					const node = scope.get(arg.getString()).getNode();
+					const node = scope.get(arg.getString()).getNodeOrLiteral();
 					if (!node.isArgument() && !node.isCommandList())
 						throw new Error();
 					command.replaceArgument(arg, node.clone());

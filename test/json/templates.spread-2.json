@@ -1,0 +1,135 @@
+{
+  "value": {
+    "value": [
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 79,
+            "end": 83,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "hello",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 79,
+        "end": 85,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 79,
+            "end": 83,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "world",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 79,
+        "end": 85,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 79,
+            "end": 83,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "123",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 79,
+        "end": 85,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 79,
+            "end": 83,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "abc",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 79,
+        "end": 85,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 153,
+            "end": 157,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "!",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 153,
+        "end": 159,
+        "type": 1
+      }
+    ],
+    "toplevel": true
+  },
+  "start": 0,
+  "end": 320,
+  "type": 2
+}
