@@ -37,9 +37,9 @@ bind+- a {
 
 .
 
-template if-else condition then otherwise {
+template if-else (condition then otherwise) {
 	cond do_unless 1
-	if condition {
+	if (condition) {
 		cond do_unless 0
 		do then
 	}

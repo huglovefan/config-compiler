@@ -74,32 +74,73 @@ export class Parser
 		return commands;
 	}
 	
+	private isAtArgument ()
+	{
+		return this.tokenizer.current.is([
+			"Symbol", "String", "Break",
+			"BlockStart",
+			"ParenStart",
+		])
+	}
+	
+	private parseArgument ()
+	{
+		if (this.tokenizer.current.is(["Symbol", "String", "Break"]))
+		{
+			const token = this.tokenizer.advance();
+			const {value, start, end} = token;
+			const argument = Argument.create({
+				value,
+				quoted: token.is("String"),
+			}, start, end);
+			return [argument];
+		}
+		
+		if (this.tokenizer.current.is("BlockStart"))
+		{
+			const block = this.parseBlock();
+			return [block];
+		}
+		
+		if (this.tokenizer.current.is("ParenStart"))
+			return this.parseParens();
+		
+		throw new Error();
+	}
+	
+	private parseParens (): (Argument | CommandList)[]
+	{
+		const result = [];
+		
+		const open = this.tokenizer.eat("ParenStart");
+		if (open === null)
+			throw new Error();
+		
+		while (true)
+		{
+			while (this.tokenizer.eat(["Newline"]))
+				continue;
+			if (!this.isAtArgument())
+				break;
+			result.push(...this.parseArgument());
+		}
+		
+		const close = this.tokenizer.eat("ParenEnd");
+		if (close === null)
+			throw new CFGError("unclosed parens", open.start, this.tokenizer.current.end);
+		
+		if (result.length === 0)
+			throw new CFGError("empty parens", open.start, this.tokenizer.current.end);
+		
+		return result;
+	}
+	
 	private parseCommand ()
 	{
 		const command = Command.create([], this.tokenizer.current.start);
 		
-		while (true)
-		{
-			if (this.tokenizer.current.is(["Symbol", "String", "Break"]))
-			{
-				const token = this.tokenizer.advance();
-				const {value, start, end} = token;
-				const argument = Argument.create({
-					value,
-					quoted: token.is("String"),
-				}, start, end);
-				command.pushArguments(argument);
-			}
-			else if (this.tokenizer.current.is("BlockStart"))
-			{
-				const block = this.parseBlock();
-				command.pushArguments(block);
-			}
-			else
-			{
-				break;
-			}
-		}
+		while (this.isAtArgument())
+			command.pushArguments(...this.parseArgument());
 		
 		if (command.argc() === 0)
 			return null;

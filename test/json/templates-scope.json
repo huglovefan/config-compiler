@@ -8,8 +8,8 @@
               "value": "echo",
               "quoted": false
             },
-            "start": 25,
-            "end": 29,
+            "start": 27,
+            "end": 31,
             "type": 0
           },
           {
@@ -22,8 +22,8 @@
             "type": 0
           }
         ],
-        "start": 25,
-        "end": 46,
+        "start": 27,
+        "end": 48,
         "type": 1
       },
       {
@@ -33,8 +33,8 @@
               "value": "echo",
               "quoted": false
             },
-            "start": 81,
-            "end": 85,
+            "start": 85,
+            "end": 89,
             "type": 0
           },
           {
@@ -47,8 +47,8 @@
             "type": 0
           }
         ],
-        "start": 81,
-        "end": 108,
+        "start": 85,
+        "end": 112,
         "type": 1
       },
       {
@@ -58,13 +58,13 @@
               "value": "...",
               "quoted": false
             },
-            "start": 206,
-            "end": 209,
+            "start": 210,
+            "end": 213,
             "type": 0
           }
         ],
-        "start": 206,
-        "end": 209,
+        "start": 210,
+        "end": 213,
         "type": 1
       },
       {
@@ -74,13 +74,13 @@
               "value": "...",
               "quoted": false
             },
-            "start": 211,
-            "end": 214,
+            "start": 215,
+            "end": 218,
             "type": 0
           }
         ],
-        "start": 211,
-        "end": 214,
+        "start": 215,
+        "end": 218,
         "type": 1
       },
       {
@@ -90,13 +90,13 @@
               "value": "...",
               "quoted": false
             },
-            "start": 216,
-            "end": 219,
+            "start": 220,
+            "end": 223,
             "type": 0
           }
         ],
-        "start": 216,
-        "end": 219,
+        "start": 220,
+        "end": 223,
         "type": 1
       },
       {
@@ -106,8 +106,8 @@
               "value": "say",
               "quoted": false
             },
-            "start": 255,
-            "end": 258,
+            "start": 261,
+            "end": 264,
             "type": 0
           },
           {
@@ -129,14 +129,14 @@
             "type": 0
           }
         ],
-        "start": 255,
-        "end": 262,
+        "start": 261,
+        "end": 268,
         "type": 1
       }
     ],
     "toplevel": true
   },
   "start": 0,
-  "end": 354,
+  "end": 362,
   "type": 2
 }

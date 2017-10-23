@@ -38,7 +38,7 @@ export class CFGError extends Error
 	readonly start: number;
 	readonly end: number;
 	
-	private constructor (message: string, start: number, end: number)
+	constructor (message: string, start: number, end: number)
 	{
 		super(message);
 		

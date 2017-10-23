@@ -28,6 +28,8 @@ namespace Patterns
 		BlockComment: /\/\*(?:((?:(?!\*\/)[^\n])*?\n[^]*?)|[^]*?)(?:$|\*\/)/y, // capture if newline
 		BlockStart:   /(\{)/y,
 		BlockEnd:     /(\})/y,
+		ParenStart:   /(\()/y,
+		ParenEnd:     /(\))/y,
 		Separator:    CFG.Separator,
 		Break:        CFG.Break,
 		String:       CFG.String,

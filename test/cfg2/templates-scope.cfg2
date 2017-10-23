@@ -1,8 +1,8 @@
-template nested A {
+template (nested A) {
 	
 	echo "A in nested:" A
 	
-	template nested_inner A {
+	template (nested_inner A) {
 		echo "A in nested_inner:" A
 	}
 	
@@ -17,11 +17,11 @@ nested "outer"
 ...
 ...
 
-template say_two_things A B {
+template (say_two_things A B) {
 	say A B
 }
 
-template reverse cmd A B {
+template (reverse cmd A B) {
 	cmd B A
 }
 
