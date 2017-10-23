@@ -1,0 +1,35 @@
+template print_spread_middle (A ...B C) {
+	echo "first:" A
+	echo "optional:" ...B
+	echo "last:" C
+}
+template print_spread_first (...A B) {
+	echo "optional:" ...A
+	echo "last:" B
+}
+template print_spread_last (A ...B) {
+	echo "first:" A
+	echo "optional:" ...B
+}
+
+print_spread_middle "first" "last"
+.
+print_spread_middle "first" 1 "last"
+.
+print_spread_middle "first" 1 2 "last"
+
+...
+
+print_spread_first "last"
+.
+print_spread_first 1 "last"
+.
+print_spread_first 1 2 "last"
+
+...
+
+print_spread_last "first"
+.
+print_spread_last "first" 1
+.
+print_spread_last "first" 1 2

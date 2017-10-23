@@ -1,0 +1,663 @@
+{
+  "value": {
+    "value": [
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 44,
+            "end": 48,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "first: first",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 44,
+        "end": 59,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 62,
+            "end": 66,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional:",
+              "quoted": true
+            },
+            "start": 67,
+            "end": 78,
+            "type": 0
+          }
+        ],
+        "start": 62,
+        "end": 83,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 86,
+            "end": 90,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "last: last",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 86,
+        "end": 100,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 311,
+            "end": 312,
+            "type": 0
+          }
+        ],
+        "start": 311,
+        "end": 312,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 44,
+            "end": 48,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "first: first",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 44,
+        "end": 59,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 62,
+            "end": 66,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional: 1",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 62,
+        "end": 83,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 86,
+            "end": 90,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "last: last",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 86,
+        "end": 100,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 352,
+            "end": 353,
+            "type": 0
+          }
+        ],
+        "start": 352,
+        "end": 353,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 44,
+            "end": 48,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "first: first",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 44,
+        "end": 59,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 62,
+            "end": 66,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional: 1 2",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 62,
+        "end": 83,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 86,
+            "end": 90,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "last: last",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 86,
+        "end": 100,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "...",
+              "quoted": false
+            },
+            "start": 397,
+            "end": 400,
+            "type": 0
+          }
+        ],
+        "start": 397,
+        "end": 400,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 146,
+            "end": 150,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional:",
+              "quoted": true
+            },
+            "start": 151,
+            "end": 162,
+            "type": 0
+          }
+        ],
+        "start": 146,
+        "end": 167,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 170,
+            "end": 174,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "last: last",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 170,
+        "end": 184,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 431,
+            "end": 432,
+            "type": 0
+          }
+        ],
+        "start": 431,
+        "end": 432,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 146,
+            "end": 150,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional: 1",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 146,
+        "end": 167,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 170,
+            "end": 174,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "last: last",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 170,
+        "end": 184,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 463,
+            "end": 464,
+            "type": 0
+          }
+        ],
+        "start": 463,
+        "end": 464,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 146,
+            "end": 150,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional: 1 2",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 146,
+        "end": 167,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 170,
+            "end": 174,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "last: last",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 170,
+        "end": 184,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "...",
+              "quoted": false
+            },
+            "start": 499,
+            "end": 502,
+            "type": 0
+          }
+        ],
+        "start": 499,
+        "end": 502,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 229,
+            "end": 233,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "first: first",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 229,
+        "end": 244,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 247,
+            "end": 251,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional:",
+              "quoted": true
+            },
+            "start": 252,
+            "end": 263,
+            "type": 0
+          }
+        ],
+        "start": 247,
+        "end": 268,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 533,
+            "end": 534,
+            "type": 0
+          }
+        ],
+        "start": 533,
+        "end": 534,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 229,
+            "end": 233,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "first: first",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 229,
+        "end": 244,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 247,
+            "end": 251,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional: 1",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 247,
+        "end": 268,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": ".",
+              "quoted": false
+            },
+            "start": 565,
+            "end": 566,
+            "type": 0
+          }
+        ],
+        "start": 565,
+        "end": 566,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 229,
+            "end": 233,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "first: first",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 229,
+        "end": 244,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "echo",
+              "quoted": false
+            },
+            "start": 247,
+            "end": 251,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "optional: 1 2",
+              "quoted": true
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 247,
+        "end": 268,
+        "type": 1
+      }
+    ],
+    "toplevel": true
+  },
+  "start": 0,
+  "end": 599,
+  "type": 2
+}

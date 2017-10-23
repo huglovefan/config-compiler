@@ -1,4 +1,4 @@
-import {Node, CommandList, Command} from "./parsing/Node.js";
+import {CommandList, Command, Argument} from "./parsing/Node.js";
 import {CFGError} from "./errors.js";
 
 import Scope from "./interpreter/Scope.js";
@@ -23,6 +23,7 @@ todo:
 enum ScopeItemType
 {
 	NODE,
+	SPREAD,
 	TEMPLATE,
 }
 
@@ -40,6 +41,10 @@ abstract class ScopeItem <TType extends ScopeItemType, TValue>
 	{
 		return this.type === ScopeItemType.NODE;
 	}
+	isSpread (): this is SpreadScopeItem
+	{
+		return this.type === ScopeItemType.SPREAD;
+	}
 	isTemplate (): this is TemplateScopeItem
 	{
 		return this.type === ScopeItemType.TEMPLATE;
@@ -50,7 +55,14 @@ abstract class ScopeItem <TType extends ScopeItemType, TValue>
 		if (!this.isNode())
 			throw new Error();
 		
-		return <Node<any, any>> (<any> this).value;
+		return <Argument | CommandList> (<any> this).value;
+	}
+	getSpread ()
+	{
+		if (!this.isSpread())
+			throw new Error();
+		
+		return <(Argument | CommandList)[]> (<any> this).value;
 	}
 	getTemplate ()
 	{
@@ -61,9 +73,14 @@ abstract class ScopeItem <TType extends ScopeItemType, TValue>
 	}
 }
 
-class NodeScopeItem extends ScopeItem<ScopeItemType.NODE, Node<any, any>>
+class NodeScopeItem extends ScopeItem<ScopeItemType.NODE, Argument | CommandList>
 {
 	protected readonly type = ScopeItemType.NODE;
+}
+
+class SpreadScopeItem extends ScopeItem<ScopeItemType.SPREAD, (Argument | CommandList)[]>
+{
+	protected readonly type = ScopeItemType.SPREAD;
 }
 
 class TemplateScopeItem extends ScopeItem<ScopeItemType.TEMPLATE, Template>
@@ -113,18 +130,45 @@ class Template
 	{
 		const args = [...command].slice(1);
 		
-		// todo: parent is just where it was used, should it be in the scope chain at all?
-		
 		const cloneScope = new Scope(this.declarationScope);
 		
-		for (let i = 0; i < args.length; i++)
+		const params = [...this.params];
+		
+		while (params.length)
 		{
-			const paramName = this.params[i];
-			const valueNode = args[i];
+			const paramName = params.shift()!;
+			
+			console.assert(!!paramName);
+			
+			if (paramName.startsWith("..."))
+			{
+				console.log("found spread parameter: %s", paramName);
+				
+				const spreadName = paramName;
+				
+				const argsAfterThis = (args.length - 1);
+				const paramsAfterThis = (params.length - 1);
+				const leftToSpread = argsAfterThis - paramsAfterThis;
+				
+				console.log("spread %s will capture %s items",
+					spreadName, leftToSpread);
+				
+				const spread = args.splice(0, leftToSpread);
+				
+				cloneScope.set(spreadName, new SpreadScopeItem(spread));
+				
+				continue;
+			}
+			
+			const valueNode = args.shift()!;
+			
+			console.assert(valueNode);
 			
 			if (valueNode.isArgument() && !valueNode.isQuoted())
 			{
 				const argumentName = valueNode.getString();
+				
+				console.log("got a possible parameter argument for %s: %s", paramName, argumentName);
 				
 				// copy into scopes for the block BUT with the name of the parameter
 				
@@ -133,6 +177,8 @@ class Template
 				
 				continue;
 			}
+			
+			console.log("got a block or string parameter for %s", paramName);
 			
 			cloneScope.set(paramName, new NodeScopeItem(valueNode));
 		}
@@ -186,13 +232,26 @@ function interpretTemplatesInBlock
 				console.log("templates: recursing into a block argument of %s", command.getName());
 				interpretTemplatesInBlock(arg, scope);
 			}
-			else if (arg.isArgument() && !arg.isQuoted() && scope.has(arg.getString()))
+			else if (arg.isArgument() && !arg.isQuoted())
 			{
+				const s = arg.getString();
+				if (!scope.has(s))
+					continue;
+				
+				if (!scope.get(s).isSpread())
+				{
+					const node = scope.get(arg.getString()).getNode();
+					if (!node.isArgument() && !node.isCommandList())
+						throw new Error();
+					command.replaceArgument(arg, node.clone());
+				}
+				else
+				{
+					const node = scope.get(arg.getString()).getSpread();
+					command.replaceArgument(arg, ...node.map(n => n.clone()));
+				}
+				
 				console.log("templates: replaced a param to %s with name %s", command.getName(), arg.getString());
-				const node = scope.get(arg.getString()).getNode();
-				if (!node.isArgument() && !node.isCommandList())
-					throw new Error();
-				command.replaceArgument(arg, node.clone());
 			}
 		}
 	}
