@@ -33,7 +33,7 @@ export class Compiler
 		fixBlockArgs(commands);
 		rewriteConditionals(commands);
 		rewriteEchoSay(commands);
-		rewriteBlocks(commands);
+		rewriteBlocks(commands); // optimizes blocks, do this last
 		
 		this.commands = commands;
 		return commands;

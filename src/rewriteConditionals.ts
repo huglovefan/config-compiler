@@ -78,7 +78,11 @@ class Cond
 		
 		// never used -> output nothing
 		if (this.uses.size === 0)
+		{
+			for (const assignment of this.assignments)
+				assignment.parentBlock.removeChild(assignment.command);
 			return commands;
+		}
 		
 		// never assigned (to 1) -> inline the blocks
 		// todo: this breaks with `else` fixing

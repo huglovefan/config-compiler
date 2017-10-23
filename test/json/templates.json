@@ -362,40 +362,6 @@
         "value": [
           {
             "value": {
-              "value": "cond",
-              "quoted": false
-            },
-            "start": 580,
-            "end": 584,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "test",
-              "quoted": false
-            },
-            "start": 585,
-            "end": 589,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": "1",
-              "quoted": false
-            },
-            "start": 590,
-            "end": 591,
-            "type": 0
-          }
-        ],
-        "start": 580,
-        "end": 591,
-        "type": 1
-      },
-      {
-        "value": [
-          {
-            "value": {
               "value": "alias",
               "quoted": false
             },

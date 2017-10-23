@@ -25,4 +25,9 @@ export default class Scope <TItem>
 	{
 		return name.toLowerCase() in this.object;
 	}
+	
+	hasOwn (name: string)
+	{
+		return <boolean> Object.prototype.hasOwnProperty.call(this.object, name.toLowerCase());
+	}
 }
