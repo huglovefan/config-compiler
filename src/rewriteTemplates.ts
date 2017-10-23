@@ -1,110 +1,99 @@
-import {CommandList, Command, Argument} from "./parsing/Node.js";
+import {Node, CommandList, Command, Argument} from "./parsing/Node.js";
 import {CFGError} from "./errors.js";
+
+import Scope from "./interpreter/Scope.js";
 
 /*
 
 template <name> [...parameters] <body>
 
 feature roadmap:
-- passing templates to templates (capture scope)
+- done: passing templates to templates (capture declaration scope)
 - spread args (at most one, doesn't have to be last)
+
+todo:
+- there should only be one scope with a ScopeItem class & errors for using the wrong type in cfg2
 
 */
 
-interface IScope <TItem>
+//
+//
+//
+
+enum ScopeItemType
 {
-	getItem (name: string): TItem;
-	hasItem (name: string): boolean;
-	addItem (name: string, value: TItem): void;
+	NODE,
+	TEMPLATE,
 }
 
-class NullScope implements IScope<any>
+abstract class ScopeItem <TType extends ScopeItemType, TValue>
 {
-	getItem (): never
+	protected abstract readonly type: TType;
+	protected readonly value: TValue;
+	
+	isNode (): this is NodeScopeItem
 	{
-		throw new Error();
+		return this.type === ScopeItemType.NODE;
+	}
+	isTemplate (): this is TemplateScopeItem
+	{
+		return this.type === ScopeItemType.TEMPLATE;
 	}
 	
-	hasItem ()
+	getNode (): NodeScopeItem
 	{
-		return false;
+		if (!this.isNode())
+			throw new Error();
+		
+		return this;
 	}
-	
-	addItem ()
+	getTemplate (): TemplateScopeItem
 	{
-		throw new Error();
+		if (!this.isTemplate())
+			throw new Error();
+		
+		return this;
 	}
 }
 
-class ItemScope <TItem = any>
+class NodeScopeItem extends ScopeItem<ScopeItemType.NODE, Node<any, any>>
 {
-	protected items: Map<string, TItem>
-	protected parent: IScope<TItem>;
-	
-	constructor (parent: IScope<TItem> = new NullScope())
-	{
-		this.items = new Map();
-		this.parent = parent;
-	}
-	
-	getItem (name: string): TItem
-	{
-		name = name.toLowerCase();
-		
-		if (this.hasOwnItem(name))
-			return this.items.get(name)!;
-		
-		if (this.parent.hasItem(name))
-			return this.parent.getItem(name);
-		
-		throw new Error();
-	}
-	
-	addItem (name: string, value: TItem)
-	{
-		name = name.toLowerCase();
-		
-		if (this.hasOwnItem(name))
-			console.warn("'%s' already exists in this scope", name);
-		
-		this.items.set(name, value);
-	}
-	
-	hasOwnItem (name: string)
-	{
-		name = name.toLowerCase();
-		
-		return this.items.has(name);
-	}
-	
-	hasItem (name: string)
-	{
-		name = name.toLowerCase();
-		
-		if (this.hasOwnItem(name))
-			return true;
-		
-		return this.parent.hasItem(name);
-	}
+	protected readonly type = ScopeItemType.NODE;
 }
+
+class TemplateScopeItem extends ScopeItem<ScopeItemType.TEMPLATE, Template>
+{
+	protected readonly type = ScopeItemType.TEMPLATE;
+}
+
+//
+//
+//
 
 /** any cfg2 value */
-type Param = Argument | CommandList;
+type Value = Argument | CommandList;
 
 /** scope of template parameters */
-type ParamScope = IScope<Param>;
+type ValueScope = Scope<Value>;
 
 /** scope of template declarations */
-type TemplateScope = IScope<Template>;
+type TemplateScope = Scope<Template>;
 
 class Template
 {
 	readonly name: string;
+	
 	private params: string[];
 	private body: CommandList;
 	
-	constructor (command: Command)
+	private templateScope: TemplateScope;
+	private paramScope: ValueScope;
+	
+	constructor (command: Command, templateScope: TemplateScope, paramScope: ValueScope)
 	{
+		this.templateScope = templateScope;
+		this.paramScope = paramScope;
+		
 		this.name = command.argv(1).getArgument().getString();
 		
 		const args = [...command].slice(2);
@@ -123,37 +112,43 @@ class Template
 		console.log("templates: created template %s with %s parameters", this.name, this.params.length);
 	}
 	
-	getParamScope (args: Param[], command: Command, parent: ParamScope)
-	{
-		if (args.length !== this.params.length)
-			throw CFGError.for(command, "Arity mismatch");
-		
-		const scope = new ItemScope(parent);
-		
-		for (var i = 0; i < args.length; i++)
-		{
-			const name = this.params[i];
-			const value = args[i];
-			
-			scope.addItem(name, value);
-		}
-		
-		return scope;
-	}
-	
 	/**
 	 * creates a clone of the body for the command
 	 */
-	getReplacement (command: Command, templateScope: TemplateScope, parentParamScope: ParamScope)
+	getReplacement (command: Command, parentTemplateScope: TemplateScope, parentParamScope: ValueScope)
 	{
 		const args = [...command].slice(1);
 		
-		const paramScope = this.getParamScope(args, command, parentParamScope);
+		// todo: parent is just where it was used, should it be in the scope chain at all?
+		
+		const templateScope = new Scope(this.templateScope);
+		const paramScope = new Scope(this.paramScope);
+		
+		for (let i = 0; i < args.length; i++)
+		{
+			const paramName = this.params[i];
+			const valueNode = args[i];
+			
+			if (valueNode.isArgument() && !valueNode.isQuoted())
+			{
+				const argumentName = valueNode.getString();
+				
+				// copy into scopes for the block BUT with the name of the parameter
+				
+				if (parentTemplateScope.has(argumentName))
+					templateScope.set(paramName, parentTemplateScope.get(argumentName));
+				
+				if (parentParamScope.has(argumentName))
+					paramScope.set(paramName, parentParamScope.get(argumentName).clone());
+				
+				continue;
+			}
+			
+			paramScope.set(paramName, valueNode);
+		}
 		
 		const duplicate = this.body.clone();
-		
 		interpretTemplatesInBlock(duplicate, templateScope, paramScope);
-		
 		return duplicate;
 	}
 }
@@ -167,28 +162,28 @@ function interpretTemplatesInBlock
 (
 	block: CommandList,
 	parentTemplateScope: TemplateScope,
-	parentParamScope: ParamScope,
+	parentParamScope: ValueScope,
 )
 {
-	const templateScope = new ItemScope(parentTemplateScope);
-	const paramScope = new ItemScope(parentParamScope);
+	const templateScope = new Scope(parentTemplateScope);
+	const paramScope = new Scope(parentParamScope);
 	
 	for (const command of [...block])
 	{
 		// template declaration
 		if (command.nameEquals("template"))
 		{
-			const template = new Template(command);
-			templateScope.addItem(template.name, template);
+			const template = new Template(command, templateScope, paramScope);
+			templateScope.set(template.name, template);
 			console.log("templates: found a declaration for %s", template.name);
 			block.removeChild(command);
 			continue;
 		}
 		
 		// use of a template
-		if (templateScope.hasItem(command.getName()))
+		if (templateScope.has(command.getName()))
 		{
-			const template = templateScope.getItem(command.getName());
+			const template = templateScope.get(command.getName());
 			const replacements = template.getReplacement(command, templateScope, paramScope);
 			console.log("templates: replaced a use of %s", template.name);
 			block.replaceChild(command, ...replacements);
@@ -203,10 +198,10 @@ function interpretTemplatesInBlock
 				console.log("templates: recursing into a block argument of %s", command.getName());
 				interpretTemplatesInBlock(arg, templateScope, paramScope);
 			}
-			else if (arg.isArgument() && !arg.isQuoted() && paramScope.hasItem(arg.getString()))
+			else if (arg.isArgument() && !arg.isQuoted() && paramScope.has(arg.getString()))
 			{
 				console.log("templates: replaced a param to %s with name %s", command.getName(), arg.getString());
-				command.replaceArgument(arg, paramScope.getItem(arg.getString()).clone());
+				command.replaceArgument(arg, paramScope.get(arg.getString()).clone());
 			}
 		}
 	}
@@ -214,6 +209,5 @@ function interpretTemplatesInBlock
 
 export function rewriteTemplates (commands: CommandList)
 {
-	// rewriteTemplatesInBlock(commands);
-	interpretTemplatesInBlock(commands, new NullScope, new NullScope);
+	interpretTemplatesInBlock(commands, new Scope, new Scope);
 }

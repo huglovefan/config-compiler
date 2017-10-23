@@ -58,79 +58,85 @@
               "value": "...",
               "quoted": false
             },
-            "start": 204,
-            "end": 207,
+            "start": 206,
+            "end": 209,
             "type": 0
           }
         ],
-        "start": 204,
-        "end": 207,
+        "start": 206,
+        "end": 209,
         "type": 1
       },
       {
         "value": [
           {
             "value": {
-              "value": "bind_",
+              "value": "...",
               "quoted": false
             },
-            "start": 315,
-            "end": 320,
+            "start": 211,
+            "end": 214,
             "type": 0
-          },
-          {
-            "value": {
-              "value": "a",
-              "quoted": false
-            },
-            "start": 334,
-            "end": 335,
-            "type": 0
-          },
-          {
-            "value": {
-              "value": [
-                {
-                  "value": [
-                    {
-                      "value": {
-                        "value": "echo",
-                        "quoted": false
-                      },
-                      "start": 323,
-                      "end": 327,
-                      "type": 0
-                    },
-                    {
-                      "value": {
-                        "value": "a",
-                        "quoted": false
-                      },
-                      "start": -1,
-                      "end": -1,
-                      "type": 0
-                    }
-                  ],
-                  "start": 323,
-                  "end": 331,
-                  "type": 1
-                }
-              ],
-              "toplevel": false
-            },
-            "start": 321,
-            "end": 333,
-            "type": 2
           }
         ],
-        "start": 240,
-        "end": 247,
+        "start": 211,
+        "end": 214,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "...",
+              "quoted": false
+            },
+            "start": 216,
+            "end": 219,
+            "type": 0
+          }
+        ],
+        "start": 216,
+        "end": 219,
+        "type": 1
+      },
+      {
+        "value": [
+          {
+            "value": {
+              "value": "say",
+              "quoted": false
+            },
+            "start": 255,
+            "end": 258,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "hello",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          },
+          {
+            "value": {
+              "value": "world",
+              "quoted": false
+            },
+            "start": -1,
+            "end": -1,
+            "type": 0
+          }
+        ],
+        "start": 255,
+        "end": 262,
         "type": 1
       }
     ],
     "toplevel": true
   },
   "start": 0,
-  "end": 335,
+  "end": 350,
   "type": 2
 }

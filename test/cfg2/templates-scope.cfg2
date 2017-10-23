@@ -13,15 +13,17 @@ nested "outer"
 // using "nested_inner" will error here
 
 
-// --------------------------------------------------------
-... // ----------------------------------------------------
-// --------------------------------------------------------
+...
+...
+...
 
+template say_two_things A B {
+	say A B
+}
 
 template reverse cmd A B {
 	cmd B A
 }
 
-template bind_ key commands { bind key commands }
+reverse say_two_things "world" "hello"
 
-reverse bind_ { echo "a" } a
