@@ -1,4 +1,5 @@
 import {CompilerError, CFGError} from "./../errors.js";
+import Scope from "./../interpreter/Scope.js";
 
 const POS_UNKNOWN = -1;
 
@@ -219,18 +220,25 @@ export class Command extends Node<NodeType.COMMAND, (Argument | CommandList)[]>
 	}
 }
 
-export class CommandList extends Node<NodeType.COMMAND_LIST, {value: Command[], toplevel: boolean}>
+type CommandListValue =
+{
+	value: Command[];
+	toplevel: boolean;
+	declarationScope: Scope<any> | null;
+};
+
+export class CommandList extends Node<NodeType.COMMAND_LIST, CommandListValue>
 {
 	protected readonly type = NodeType.COMMAND_LIST;
 	
 	static create (value: Command[], start = POS_UNKNOWN, end = POS_UNKNOWN)
 	{
-		return new this({value, toplevel: false}, start, end);
+		return new this({value, toplevel: false, declarationScope: null}, start, end);
 	}
 	
 	static createToplevel (value: Command[], start = POS_UNKNOWN, end = POS_UNKNOWN)
 	{
-		return new this({value, toplevel: true}, start, end);
+		return new this({value, toplevel: true, declarationScope: null}, start, end);
 	}
 	
 	clone (): CommandList
@@ -238,6 +246,7 @@ export class CommandList extends Node<NodeType.COMMAND_LIST, {value: Command[], 
 		return new CommandList({
 			value: this.value.value.map(v => v.clone()),
 			toplevel: this.value.toplevel,
+			declarationScope: this.value.declarationScope, // todo: is this safe to reuse?
 		}, this.start, this.end);
 	}
 	
@@ -255,7 +264,7 @@ export class CommandList extends Node<NodeType.COMMAND_LIST, {value: Command[], 
 	
 	getCommandAt (i: number)
 	{
-		if (i >= this.value.value.length)
+		if (i < 0 || i >= this.value.value.length)
 			throw new CompilerError("CommandList#getCommand: i is out of range");
 		
 		return this.value.value[i];

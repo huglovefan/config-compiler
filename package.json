@@ -7,7 +7,10 @@
     "test": "test"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "typescript": "^2.7.2"
+  },
   "scripts": {
     "test": "tsc && node ./out/testing/verify-test-results.js",
     "install": "tsc",

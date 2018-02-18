@@ -14,6 +14,7 @@ feature roadmap:
 todo:
 - there should only be one scope with a ScopeItem class & errors for using the wrong type in cfg2
 - have a list type (replace something with it, i forgot)
+- also make a scope entry for xs for ...xs to be able to test it when passed to a template
 - "define <name> <literal>"
 - "define-list <name> [...items]"
 
@@ -155,7 +156,7 @@ class Template
 	 */
 	getReplacement (command: Command, useScope: Scope<ScopeItem<any, any>>)
 	{
-		const args = [...command].slice(1);
+		const args: (Argument | CommandList | LiteralScopeItem)[] = [...command].slice(1);
 		const params = [...this.params];
 		const cloneScope = new Scope(this.declarationScope);
 		

@@ -8,7 +8,7 @@ interface CondAssignment
 	parentBlock: CommandList;
 }
 
-class CondUse
+interface CondUse
 {
 	condition: boolean;
 	command: Command;
